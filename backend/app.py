@@ -19,4 +19,7 @@ def get_caption():
     if not text:
         return {"status": "Listening"}
 
-    return {"text": text}
+    return {
+        "original": text,
+        "translated": translate_text(text, "de")
+    }

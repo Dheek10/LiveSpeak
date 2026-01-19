@@ -1,7 +1,6 @@
 def simplify_text(text):
     if not text:
         return ""
-
     replacements = {
         "approximately": "about",
         "individuals": "people",
