@@ -5,7 +5,7 @@ from vosk import Model, KaldiRecognizer
 # Load model ONCE
 model = Model("backend/models/vosk-en")
 
-def recognize_speech(stream, timeout=5):
+def recognize_speech(stream, timeout=10):
     recognizer = KaldiRecognizer(model, 16000)
 
     start_time = time.time()

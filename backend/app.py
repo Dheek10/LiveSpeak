@@ -38,6 +38,5 @@ def get_caption():
 
     return {
         "original": text,
-        "simplified": simplify_text(text),
-        "translated": translate_text(text, "ta")
+        "translated": translate_text(text, "de")
     }
